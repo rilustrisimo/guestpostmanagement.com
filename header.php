@@ -46,12 +46,10 @@ if ( $is_sticky_header ) {
 						</div><!-- .header__content-wrap -->
 					</div><!-- .header__content -->
 					<div class="col-md-12 header-phone">
-						<div class="header-phone__inner container">
+						<div class="header-phone__inner container-fluid">
 							<div class="row">
-								<div class="col-md-1 icon"><i class="fa-solid fa-phone-flip"></i></div>
-								<div class="col-md-11 content">
-									<div class="header-phone__title">PHONE NUMBER</div>
-									<div class="header-phone__content"><span class="contact-info__value"><a href="tel:<?php echo esc_html( qed_get_formatted_mobile_number( $contact_phone ) ); ?>"><?php echo esc_html( $contact_phone ); ?></a></span></div>
+								<div class="col-md-12 content">
+									<div class="header-phone__content"><span class="contact-info__value"><i class="fa-solid fa-phone-flip"></i> <a href="tel:<?php echo esc_html( qed_get_formatted_mobile_number( $contact_phone ) ); ?>"><?php echo esc_html( $contact_phone ); ?></a></span></div>
 								</div>
 							</div>
 						</div>
