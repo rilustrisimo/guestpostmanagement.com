@@ -13,26 +13,17 @@
 .menu-login {
     position: relative;
     padding-left: 22px;
-
-    &:before {
-        content: '';
-        width: 1px;
-        height: 51px;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        background: rgba(0,0,0,.5);
-        margin-top: -25px;
-    }
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
 
     a {
         background-color: transparent;
-        color: @main-color2!important;
+        color: @main-color1!important;
         font-family: @rajdhani!important;
         font-weight: 700!important;
         text-transform: uppercase!important;
         font-size: 16px!important;
-        color: @main-color2!important;
         border: 1px solid @main-color2;
         display: unset!important;
         padding: 6px 16px!important;
@@ -48,20 +39,23 @@
     position: relative;
     padding-left: 5px;
     padding-right: 15px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
 
     a {
-        background-color: @main-color2;
+        background-color: @main-color1;
         color: #fff!important;
         font-family: @rajdhani!important;
         font-weight: 700!important;
         text-transform: uppercase!important;
         font-size: 16px!important;
-        border: 1px solid @main-color2;
+        border: 1px solid @main-color1;
         display: unset!important;
         padding: 6px 16px!important;
 
         &:hover {
-            color: @main-color2!important;
+            color: #fff!important;
             background-color: transparent!important;
         }
     }
