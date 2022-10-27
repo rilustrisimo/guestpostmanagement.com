@@ -51,7 +51,26 @@ if ( $is_sticky_header ) {
 								<div class="col-md-6 content">
 									<div class="header-phone__content"><span class="contact-info__value"><i class="fa-solid fa-phone-flip"></i> <a href="tel:<?php echo esc_html( qed_get_formatted_mobile_number( $contact_phone ) ); ?>"><?php echo esc_html( $contact_phone ); ?></a></span></div>
 								</div>
-								<div class="col-md-6 content"></div>
+								<div class="col-md-6">
+									<div class="header__content-wrap">
+										<div class="row">
+											<div class="col-md-12 header__content">
+												<?php if ( has_nav_menu( 'register-menu' ) ) : ?>
+													<nav class="register-nav-header" role="navigation">
+														<?php wp_nav_menu(array(
+															'theme_location' => 'register-menu',
+															'container' => 'ul',
+															'menu_class' => 'register-nav',
+															'menu_id' => 'navigation',
+															'depth' => 3,
+														)); ?>
+													</nav>
+												<?php endif; ?>
+												<div class="clearfix"></div>
+											</div><!-- .header__content -->
+										</div>
+									</div><!-- .header__content-wrap -->
+								</div>
 							</div>
 						</div>
 					</div><!-- .header__content -->
