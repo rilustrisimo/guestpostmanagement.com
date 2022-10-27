@@ -25,7 +25,7 @@ if ( $is_sticky_header ) {
 					<div class="col-md-3 bg-white">
 						<?php get_template_part( 'templates/header/logo' ); ?>
 					</div><!-- .header__content -->
-					<div class="col-md-6 bg-white">
+					<div class="col-md-9 bg-white">
 						<div class="header__content-wrap">
 							<div class="row">
 								<div class="col-md-12 header__content">
@@ -45,7 +45,7 @@ if ( $is_sticky_header ) {
 							</div>
 						</div><!-- .header__content-wrap -->
 					</div><!-- .header__content -->
-					<div class="col-md-3 header-phone">
+					<div class="col-md-12 header-phone">
 						<div class="header-phone__inner container">
 							<div class="row">
 								<div class="col-md-1 icon"><i class="fa-solid fa-phone-flip"></i></div>
