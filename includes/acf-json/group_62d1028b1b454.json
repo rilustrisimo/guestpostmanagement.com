@@ -1,0 +1,334 @@
+{
+    "key": "group_62d1028b1b454",
+    "title": "Order Fields",
+    "fields": [
+        {
+            "key": "field_62d102a209a29",
+            "label": "General Settings",
+            "name": "general_settings",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_62d102b409a2a",
+                    "label": "No. of Articles",
+                    "name": "no_of_articles",
+                    "type": "range",
+                    "instructions": "The number of posts you want to order.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1,
+                    "min": 1,
+                    "max": 40,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_62d109e072db9",
+                    "label": "Words (per article)",
+                    "name": "words_per_article",
+                    "type": "range",
+                    "instructions": "A word count of at least 800 is generally advisable.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 800,
+                    "min": 500,
+                    "max": 2000,
+                    "step": 100,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_62d10a1272dba",
+                    "label": "Images (per article)",
+                    "name": "images_per_article",
+                    "type": "range",
+                    "instructions": "We recommend 1 image every 350 words.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 2,
+                    "min": 0,
+                    "max": 4,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_62d10a5572dbb",
+                    "label": "Additional Authority\/Masking Links (per article) 2 Authority Links",
+                    "name": "additional_authoritymasking_links_per_article_2_authority_links",
+                    "type": "range",
+                    "instructions": "The authority links are extra links designed to \"mask\" your main link and increase the overall power of the article. This is an implementation of the co-citation SEO technique. More on this: Authority Links Examples.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 2,
+                    "min": 0,
+                    "max": 4,
+                    "step": 1,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_62d10a7c72dbc",
+                    "label": "Niche",
+                    "name": "niche",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "General": "General",
+                        "Health | Care | Medicine | Drugs | Pharmacy": "Health | Care | Medicine | Drugs | Pharmacy",
+                        "Home | Home Improvement | Garden | Architecture | Interior\/Exterior Design": "Home | Home Improvement | Garden | Architecture | Interior\/Exterior Design",
+                        "Technology | Computers | IT| Electronics | Mobile | Gadgets | Software": "Technology | Computers | IT| Electronics | Mobile | Gadgets | Software",
+                        "Online Marketing | Internet Marketing | SEO | Advertising": "Online Marketing | Internet Marketing | SEO | Advertising",
+                        "Fashion | Lifestyle | Beauty | Clothes | Makeup | Shopping": "Fashion | Lifestyle | Beauty | Clothes | Makeup | Shopping",
+                        "Dating | Relationships | Social": "Dating | Relationships | Social",
+                        "Family | Parenting | Moms| Kids | Babies | Children": "Family | Parenting | Moms| Kids | Babies | Children",
+                        "Business | Finance | Money | Entrepreneurship": "Business | Finance | Money | Entrepreneurship",
+                        "Legal | Law": "Legal | Law",
+                        "Real Estate | Houses": "Real Estate | Houses",
+                        "Fitness | Muscles | Gym": "Fitness | Muscles | Gym",
+                        "Arts | Crafts |DIY (Do It Yourself) | Paintings": "Arts | Crafts |DIY (Do It Yourself) | Paintings",
+                        "Entertainment| Movies | Music": "Entertainment| Movies | Music",
+                        "Photography": "Photography",
+                        "Games | Toys": "Games | Toys",
+                        "Sports": "Sports",
+                        "Travel | Tourism": "Travel | Tourism",
+                        "News | Latest | Popular": "News | Latest | Popular",
+                        "Pets | Cats | Dogs": "Pets | Cats | Dogs",
+                        "Auto | Cars": "Auto | Cars",
+                        "Construction | Industrial": "Construction | Industrial",
+                        "Education | Books": "Education | Books",
+                        "Food | Drinks | Restaurants": "Food | Drinks | Restaurants",
+                        "Jobs | Careers": "Jobs | Careers",
+                        "Green | Organic | Nature": "Green | Organic | Nature",
+                        "Accessories | Jewelry": "Accessories | Jewelry",
+                        "Programming | Software Development": "Programming | Software Development",
+                        "Cannabis | Marijuana | Joint": "Cannabis | Marijuana | Joint",
+                        "Narcotics | Heroine | Drug Rehabilitation": "Narcotics | Heroine | Drug Rehabilitation",
+                        "Soft Porn | Adult": "Soft Porn | Adult",
+                        "Cryptocurrency | Bitcoin | Forex Trading": "Cryptocurrency | Bitcoin | Forex Trading",
+                        "Wedding | Events": "Wedding | Events",
+                        "Gambling | Betting | Casino": "Gambling | Betting | Casino",
+                        "Religion | Faith| Belief": "Religion | Faith| Belief",
+                        "Counselling | Advice | Depression | Emotional Rehabilitation": "Counselling | Advice | Depression | Emotional Rehabilitation",
+                        "Security | Hacking": "Security | Hacking",
+                        "History": "History",
+                        "Dental Care": "Dental Care",
+                        "Science | Physics | Engineering": "Science | Physics | Engineering",
+                        "Outdoors | Fishing | Camping": "Outdoors | Fishing | Camping"
+                    },
+                    "default_value": "General",
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_62d10b0772dbd",
+                    "label": "Link Type",
+                    "name": "link_type",
+                    "type": "true_false",
+                    "instructions": "NoFollow links can be used for diversification and testing purposes.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "DoFollow",
+                    "ui_off_text": "NoFollow"
+                },
+                {
+                    "key": "field_62d10b2b72dbe",
+                    "label": "Money Keywords (Anchor Text | Anchor URL)",
+                    "name": "money_keywords_anchor_text__anchor_url",
+                    "type": "textarea",
+                    "instructions": "(one line per article)",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "money_keyword_article_1 | https:\/\/www.moneysite1.commoney_keyword_article_2 | https:\/\/www.moneysite2.commoney_keyword_article_3 | https:\/\/www.moneysite3.com",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d10c93fc5c4",
+            "label": "Article-Level RSOS",
+            "name": "article-level_rsos",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_62d10caefc5c5",
+                    "label": "RSOS",
+                    "name": "rsos",
+                    "type": "textarea",
+                    "instructions": "Keywords to include in Title, H1 and URL (one line per article)",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "RSOS article 1RSOS article 2RSOS article 3",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d10d3f973cb",
+            "label": "Additional Information",
+            "name": "additional_information",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_62d10d4a973cc",
+                    "label": "Additional Requests",
+                    "name": "additional_requests",
+                    "type": "textarea",
+                    "instructions": "Let us know if you have any specific requests.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_62d10d5c973cd",
+                    "label": "Client Name (For Accounting Purposes)",
+                    "name": "client_name_for_accounting_purposes",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Client Name (optional)",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d370ada4110",
+            "label": "Package ID",
+            "name": "package_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "orderfields"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1658037519
+}
