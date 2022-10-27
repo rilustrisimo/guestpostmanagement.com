@@ -17,5 +17,6 @@ defined( 'ABSPATH' ) || die();
 add_theme_support( 'menus' );
 register_nav_menus(array(
     'header-menu' => esc_html__( 'Header Menu', 'swishdesign' ),
+    'register-menu' => esc_html__( 'Register Menu', 'swishdesign' ),
     //'footer-menu' => esc_html__( 'Footer Menu', 'swishdesign' ),
 ));
