@@ -25,6 +25,10 @@ var Theme = {
             delay: 10,
             time: 1000
         });
+
+        $(window).resize(function(){
+            Theme.mobileChecker($);
+        });
     },
 
     mobileChecker: function($) {
