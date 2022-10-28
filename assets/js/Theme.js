@@ -84,6 +84,9 @@ var Theme = {
 
                 $('li a[product-id="139"]').trigger('click');
 
+                $('.tab-pane').removeClass('active');
+                $('#tab-3').addClass('active');
+
                 for(var i = 0;i<ids.length;i++){
                     $('li a[product-id="'+ids[i]+'"]').parent().show();
                 }
