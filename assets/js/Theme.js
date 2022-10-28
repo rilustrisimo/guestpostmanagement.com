@@ -68,16 +68,20 @@ var Theme = {
             if(pack[1] == "premium"){
                 var ids = ['1547','138','145'];
                 
+                $('li a[product-id]').parent().hide();
+                
                 for(var i = 0;i<ids.length;i++){
-                    $('li a[product-id="'+ids[i]+'"]').parent().hide();
+                    $('li a[product-id="'+ids[i]+'"]').parent().show();
                 }
             }
 
             if(pack[1] == "budget"){
                 var ids = ['139','144'];
                 
+                $('li a[product-id]').parent().hide();
+
                 for(var i = 0;i<ids.length;i++){
-                    $('li a[product-id="'+ids[i]+'"]').parent().hide();
+                    $('li a[product-id="'+ids[i]+'"]').parent().show();
                 }
             }
         }
