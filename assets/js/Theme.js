@@ -60,6 +60,26 @@ var Theme = {
              $('div[data-name=words_per_article] input[type=range]').change(function(){
                 Theme.checkCalcPrice($);
             });
+
+            //what to show
+            var l = window.location.href;
+            var pack = l.split("#");
+
+            if(pack[1] == "premium"){
+                var ids = ['1547','138','145'];
+                
+                for(var i = 0;i<ids.length;i++){
+                    $('li a[product-id="'+ids[i]+'"]').parent().hide();
+                }
+            }
+
+            if(pack[1] == "budget"){
+                var ids = ['139','144'];
+                
+                for(var i = 0;i<ids.length;i++){
+                    $('li a[product-id="'+ids[i]+'"]').parent().hide();
+                }
+            }
         }
     },
 
