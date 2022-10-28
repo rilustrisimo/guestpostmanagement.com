@@ -1103,7 +1103,7 @@ div[data-name="package_id"] {
         }
 
         .header-phone__inner {
-            padding: 7px 15px!important;
+            padding: 7px 0px!important;
             text-align: center;
 
             .content {
@@ -1119,15 +1119,18 @@ div[data-name="package_id"] {
                 text-align: center;
                 padding: 0;
 
-                ul {
-                    li {
-                        padding: 0;
-                    }
+                li {
+                    padding: 0;
+                    min-width: 84px;
                 }
             }
 
             .slicknav_menu {
                 margin-top: -25px;
+
+                .slicknav_nav {
+                    margin-top: 8px;
+                }
             }
         }
     }
