@@ -67,8 +67,8 @@ if ( have_posts() ) : ?>
 				<?php $about = get_field('about_us', get_the_ID());  ?>
 				<div class="section-about container">
 					<div class="row">
-						<div class="col-md-6"><div class="section-about__image" style="background-image:url(<?php echo $about['image']['url']; ?>);"></div><div class="section-about__years"><div class="number"><?php echo $about['years']; ?></div><div class="text">Years Experience</div></div></div>
-						<div class="col-md-6">
+						<div class="col-12 col-sm-12 col-md-6"><div class="section-about__image" style="background-image:url(<?php echo $about['image']['url']; ?>);"></div><div class="section-about__years"><div class="number"><?php echo $about['years']; ?></div><div class="text">Years Experience</div></div></div>
+						<div class="col-12 col-sm-12 col-md-6">
 							<div class="section-about__content">
 								<?php echo $about['content']; ?>
 							</div>
