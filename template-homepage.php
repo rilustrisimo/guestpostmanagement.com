@@ -52,9 +52,9 @@ if ( have_posts() ) : ?>
 							<?php foreach($navs as $k => $item):?>
 								<div class="custom-tab__navs-item container <?php echo ($k == 0)?'active':''; ?>" nav-id="<?php echo $k; ?>">
 									<div class="row">
-										<div class="col-md-1">&nbsp;</div>
-										<div class="col-md-2 icon"><?php echo $item['icon']; ?></div>
-										<div class="col-md-9 content">
+										<div class="col-1 col-sm-1 col-md-1">&nbsp;</div>
+										<div class="col-2 col-sm-2 col-md-2 icon"><?php echo $item['icon']; ?></div>
+										<div class="col-9 col-sm-9 col-md-9 content">
 											<div class="title"><?php echo $item['title']; ?></div>
 											<div class="subtitle"><?php echo $item['sub_title']; ?></div>
 										</div>
