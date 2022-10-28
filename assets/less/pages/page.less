@@ -1150,7 +1150,45 @@ div[data-name="package_id"] {
         }
     }
 
-    .slider-home {
-        height: 500px!important;
+    .slider-home,
+    .slick-slide-home {
+        height: 600px!important;
+
+        .slick-slide__title-wrap {
+            float: unset;
+            width: 100%;
+            transform: unset;
+            position: relative;
+            top: 15%;
+            left: 0;
+
+            .slick-slide__pretitle {
+                margin-bottom: 15px;
+            }
+
+            .slick-slide__subtitle {
+                font-size: 65px;
+                line-height: 70px;
+            }
+        }
+    }
+
+    .page-single__content {
+        padding: 0 15px;
+        
+        h1 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .custom-tab__item {
+        .custom-tab__image {
+            margin: 0 auto;
+        }
     }
 }

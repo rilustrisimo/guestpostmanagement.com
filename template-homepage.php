@@ -33,10 +33,10 @@ if ( have_posts() ) : ?>
 						<?php foreach($wwo as $k => $item):?>
 						<div class="col-md-12 custom-tab__item <?php echo ($k == 0)?'active':''; ?>" tab-id="<?php echo $k; ?>">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-12 col-sm-12 col-md-6">
 									<div class="custom-tab__image" style="background-image: url(<?php echo $item['image']['url']; ?>)"></div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-12 col-sm-12 col-md-6">
 									<div class="custom-tab__content">
 										<?php echo $item['content']; ?>
 									</div>
