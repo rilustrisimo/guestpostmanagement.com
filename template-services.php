@@ -13,7 +13,7 @@
  */
 defined( 'ABSPATH' ) || die();
 
-get_header('services');
+get_header();
 
 $fields = get_fields(get_the_ID());
 
