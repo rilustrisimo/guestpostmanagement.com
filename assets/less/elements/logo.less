@@ -1,13 +1,17 @@
 .logo {
     position: relative;
     z-index: 1;
-    .float(left);
+    float: unset;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    padding: 0 15px 0 15px;
+    height: 97px;
+    line-height: 97px;
 
     a {
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
         color: @header-text-color;
         font-family: @alternative-text-family;
         font-size: 1.267em;
@@ -17,7 +21,7 @@
 #logoLink {
     img {
         max-height: @header__content-height;
-        max-width: 140px;
+        max-width: 200px;
     }
 }
 
