@@ -27,6 +27,7 @@ do_action( 'woocommerce_before_account_navigation' );
 	$navs = wc_get_account_menu_items(); 
 	$tempnavs = array();
 	$tempnavs['configure'] = 'Configure';
+	var_dump($navs);
 	foreach($navs as $k => $v):
 		$tempnavs[$k] = $v;
 	endforeach;
