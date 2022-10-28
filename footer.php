@@ -66,11 +66,11 @@ if ( qed_get_option( 'is_testimonial_enabled', 'option' ) && qed_is_display_test
 		?>
 		<div class="container footer-content">
 			<div class="row">
-			<div class="col-md-6">
+			<div class="col-12 col-sm-12 col-md-6">
 
 				<div class="footer__logo"><?php get_template_part( 'templates/header/logo' ); ?></div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-12 col-sm-12 col-md-6">
 
 					<div class="footer__copyright"><?php echo qed_esc_text( qed_get_option( 'footer_text_note', 'option', '© 2020 - Eyorsogood | Development and Design by Rouie Ilustrisimo' ), 'option_input', true ); ?></div>
 				</div>
