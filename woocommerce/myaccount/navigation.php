@@ -26,10 +26,13 @@ do_action( 'woocommerce_before_account_navigation' );
 	<?php 
 	$navs = wc_get_account_menu_items(); 
 	$tempnavs = array();
-	$tempnavs['configure'] = 'Configure';
-	var_dump($navs);
+	
+	$cnt = 1;
+	
 	foreach($navs as $k => $v):
 		$tempnavs[$k] = $v;
+		if($cnt == 3) $tempnavs['configure'] = 'Configure';
+		$cnt++;
 	endforeach;
 
 	unset($tempnavs['downloads']);
