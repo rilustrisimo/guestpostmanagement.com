@@ -1122,6 +1122,7 @@ div[data-name="package_id"] {
                 li {
                     padding: 0;
                     min-width: 84px;
+                    margin: 0 0 0 29px!important;
                 }
             }
 
@@ -1130,6 +1131,20 @@ div[data-name="package_id"] {
 
                 .slicknav_nav {
                     margin-top: 8px;
+
+                    li {
+                        &.menu-item-has-children {
+                            svg {
+                                display: none;
+                            }
+                        }
+
+                        a {
+                            font-family: @rajdhani;
+                            font-size: 18px;
+                            color: @main-color1;
+                        }
+                    }
                 }
             }
         }
