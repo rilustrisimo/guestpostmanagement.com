@@ -22,7 +22,7 @@ if ( $is_sticky_header ) {
 		<div class="header__content-wrap">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-3 bg-white">
+					<div class="col-12 col-sm-12 col-md-3 bg-white">
 						<?php get_template_part( 'templates/header/logo' ); ?>
 					</div><!-- .header__content -->
 					<div class="col-md-9 bg-white">

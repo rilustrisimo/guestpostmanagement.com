@@ -15,6 +15,7 @@ var Theme = {
         this.fontaweDetails($);
         this.configureScripts($);
         this.miscScripts($);
+        this.mobileChecker($);
 
         $( '[data-toggle="tooltip"]' ).tooltip();
 
@@ -24,6 +25,22 @@ var Theme = {
             delay: 10,
             time: 1000
         });
+    },
+
+    mobileChecker: function($) {
+        if (Theme.isMobile()) {
+            $('body').addClass('in-mobile');
+        } else {
+            $('body').removeClass('in-mobile');
+        }
+    },
+
+    isMobile: function() {
+        if (jQuery(window).width() <= 992) {
+            return true;
+        } else {
+            return false;
+        }
     },
 
     miscScripts: function($){
