@@ -82,7 +82,7 @@ var Theme = {
                 $('li a[product-id]').removeClass('active');
                 $('li a[product-id="139"]').addClass('active');
 
-                Theme.checkCalcPrice($);
+                $('li a[product-id="139"]').trigger('click');
 
                 for(var i = 0;i<ids.length;i++){
                     $('li a[product-id="'+ids[i]+'"]').parent().show();
