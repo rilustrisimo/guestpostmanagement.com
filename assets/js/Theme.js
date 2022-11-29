@@ -53,6 +53,10 @@ var Theme = {
             $('#menu-item-110').css('margin-right', '15px');
             $('#menu-item-109').hide();
         }
+
+        if($('label[for="account_display_name"]').length > 0){
+            $('label[for="account_display_name"]').html('Business Name&nbsp;<span class="required">*</span>');
+        }
     },
 
     configureScripts: function($){
