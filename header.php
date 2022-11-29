@@ -55,15 +55,26 @@ if ( $is_sticky_header ) {
 									<div class="header__content-wrap register">
 										<div class="row">
 											<div class="col-md-12 header__content">
-												<?php if ( has_nav_menu( 'register-menu' ) ) : ?>
+												<?php if(!is_user_logged_in()): ?>
+													<?php if ( has_nav_menu( 'register-menu' ) ) : ?>
+														<nav class="register-nav-header" role="navigation">
+															<?php wp_nav_menu(array(
+																'theme_location' => 'register-menu',
+																'container' => 'ul',
+																'menu_class' => 'register-nav',
+																'menu_id' => 'navigation',
+																'depth' => 3,
+															)); ?>
+														</nav>
+													<?php endif; ?>
+
+												<?php else: ?>
 													<nav class="register-nav-header" role="navigation">
-														<?php wp_nav_menu(array(
-															'theme_location' => 'register-menu',
-															'container' => 'ul',
-															'menu_class' => 'register-nav',
-															'menu_id' => 'navigation',
-															'depth' => 3,
-														)); ?>
+														<ul id="navigation" class="register-nav">
+															<li id="menu-item-1531" class="menu-login">
+																<a href="/my-account/" aria-current="page">My Account</a>
+															</li>
+														</ul>												
 													</nav>
 												<?php endif; ?>
 												<div class="clearfix"></div>
