@@ -58,7 +58,7 @@ if ( have_posts() ) : ?>
 
 							<?php if ( null !== $contact_email ) : ?>
 								<div class="contact-info__email">
-									<span class="contact-info__title"></span><span class="contact-info__value"><a href="mailto:<?php echo esc_html( $contact_email ); ?>?subject=Enquiry for TXM Chartered Accountants"><?php echo esc_html( $contact_email ); ?></a></span>
+									<span class="contact-info__title"></span><span class="contact-info__value"><a href="mailto:<?php echo esc_html( $contact_email ); ?>?subject=Enquiry for Guest Post Management"><?php echo esc_html( $contact_email ); ?></a></span>
 									<div class="clearfix"></div>
 								</div>
 							<?php endif; ?>
