@@ -61,6 +61,8 @@ var Theme = {
         $('textarea').keyup(function(){
             if($(this).val().length > 0){
                 $(this).css('padding', '5px 20px');
+            }else{
+                $(this).css('padding', '0px');
             }
         });
     },
