@@ -96,4 +96,4 @@ if ( $is_sticky_header ) {
 SD_Js_Client_Script::add_script( 'initResizeHandler', 'Theme.initResizeHandler();' );
 //SD_Js_Client_Script::add_script( 'initResizeHandler', 'Theme.initResizeHandler(' . wp_json_encode( $js_config ) . ');' );
 get_template_part( 'templates/header/header', 'section' );
-do_action('eyor_before_main_content');
+do_action('eyor_before_main_content2');
