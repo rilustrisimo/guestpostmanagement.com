@@ -57,14 +57,6 @@ var Theme = {
         if($('label[for="account_display_name"]').length > 0){
             $('label[for="account_display_name"]').html('Business Name&nbsp;<span class="required">*</span>');
         }
-
-        $('textarea').keyup(function(){
-            if($(this).val().length > 0){
-                $(this).css('padding', '5px 20px');
-            }else{
-                $(this).css('padding', '0px');
-            }
-        });
     },
 
     configureScripts: function($){
