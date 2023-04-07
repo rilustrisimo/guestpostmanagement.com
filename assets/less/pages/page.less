@@ -676,6 +676,13 @@ div[data-name="package_id"] {
             right: -23px;
             line-height: 16px;
             color: #fff;
+            z-index: 9;
+        }
+
+        &-spinner {
+            position: absolute;
+            top: 8px;
+            left: 143px;
         }
 
         .wpcf7-response-output {
@@ -734,6 +741,7 @@ div[data-name="package_id"] {
                 outline: 0;
                 margin: 0;
                 max-width: 200px;
+                line-height: 40px;
                 
                 &:hover {
                     color: @main-color2!important;
