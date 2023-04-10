@@ -41,7 +41,7 @@ if ( have_posts() ) : ?>
 			<main class="page-single__content" role="main">
 				<div class="container">
                     <div class="row">
-                        <div class="col-md-12 configure">
+                        <div class="col-md-4 configure">
                             <?php $packages = $fields['packages']; ?>
                             <div class="order-packages">
                                 <ul class="nav nav-tabs" id="package-tabs" role="tablist">
@@ -64,11 +64,17 @@ if ( have_posts() ) : ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 calc-price">
-                            <div class="calc-price_container">Calculated Price: <span class="price">$99.99</span></div>
-                        </div>
-                        <div class="col-md-12 gen-settings">
-                            <?php $theme->createAcfForm(155, 'orderfields', 'Add to Cart', 'configure-order/?success=1'); ?>
+                        <div class="col-md-8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 calc-price">
+                                        <div class="calc-price_container">Calculated Price: <span class="price">$99.99</span></div>
+                                    </div>
+                                    <div class="col-md-12 gen-settings">
+                                        <?php $theme->createAcfForm(155, 'orderfields', 'Add to Cart', 'configure-order/?success=1'); ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
