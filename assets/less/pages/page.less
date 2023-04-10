@@ -273,6 +273,26 @@
             padding: 0;
         }
     }
+
+    #acf-form-data {
+        & > .acf-fields {
+            .acf-field {
+                padding: 0px 12px;
+
+                .acf-label {
+                    label {
+                        text-transform: uppercase;
+                        color: @main-color1;
+                    }
+
+                    .description {
+                        font-size: 13px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .wp-block-columns {
