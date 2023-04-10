@@ -252,13 +252,19 @@
         &[type="number"] {
             color: @main-color1;
         }
+
+        &[type="text"] {
+            font-size: 15px!important;
+            font-weight: 400!important;
+            font-family: @open-sans!important;
+        }
     }
 
     textarea {
         padding: 15px!important;
         line-height: 35px!important;
-        font-size: 18px!important;
-        font-weight: 600!important;
+        font-size: 15px!important;
+        font-weight: 400!important;
         font-family: @open-sans!important;
 
         &::-webkit-input-placeholder{
@@ -275,6 +281,14 @@
     }
 
     #acf-form {
+        .acf-form-submit {
+            input {
+                border-radius: 10px;
+                margin: 0;
+                font-weight: 700!important;
+            }
+        }
+
         & > .acf-fields {
             border: none;
 
