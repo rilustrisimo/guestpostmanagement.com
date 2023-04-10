@@ -545,13 +545,18 @@
         }
 
         .woocommerce-MyAccount-navigation {
+            max-width: 250px;
+            display: inline-block;
+            vertical-align: top;
+
             ul {
                 text-align: center;
 
                 li {
-                    display: inline-block;
+                    display: block;
                     vertical-align: top;
-                    margin: 0 7px;
+                    margin: 5px 0;
+                    text-align: left;
 
                     &.is-active {
                         a {
@@ -560,6 +565,12 @@
                     }
                 }
             }
+        }
+
+        .woocommerce-MyAccount-content {
+            max-width: 890px;
+            display: inline-block;
+            vertical-align: top;
         }
     }
 
