@@ -276,8 +276,11 @@
 
     #acf-form {
         & > .acf-fields {
+            border: none;
+
             .acf-field {
-                padding: 0px 12px;
+                padding: 0px;
+                border: none;
 
                 &::before {
                     display: none;
@@ -286,6 +289,7 @@
                 .acf-label {
                     float: unset;
                     width: 100%;
+                    padding: 0;
 
                     label {
                         text-transform: uppercase;
@@ -298,6 +302,10 @@
                         font-size: 13px;
                         line-height: 17px;
                     }
+                }
+
+                .acf-input {
+                    padding: 0;
                 }
             }
         }
