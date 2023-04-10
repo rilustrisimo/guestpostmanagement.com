@@ -72,7 +72,7 @@ if ( have_posts() ) : ?>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12 gen-settings">
-                                        <?php $theme->createAcfForm(155, 'orderfields', 'Add to Cart', 'configure-order/?success=1'); ?>
+                                        <?php $theme->createAcfForm(155, 'orderfields', 'Submit Order', 'configure-order/?success=1'); ?>
                                     </div>
                                 </div>
                             </div>
