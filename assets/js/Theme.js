@@ -39,7 +39,12 @@ var Theme = {
             $(window).scroll(function(){
                 var header = $('header.header').offset() + 100;
                 var scrtop = $(window).scrollTop();
-                console.log(scrtop);
+                
+                if(scrtop > header){
+                    $('.configure').addClass('config-sticky');
+                }else{
+                    $('.configure').removeClass('config-sticky');
+                }
             });
         }
     },
