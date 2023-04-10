@@ -59,13 +59,17 @@ var Theme = {
         }
     },
 
+    numberWithCommas: function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    },
+
     configureScripts: function($){
         if($('#package-tabs').length > 0){
             var pid = $('#package-tabs a.active').attr('product-id');
             $('div[data-name="package_id"] input').val(pid);
 
             var price = $('#package-tabs a.active').attr('product-price');
-            $('.calc-price_container span').text('$' + price);
+            $('.calc-price_container span').text('$' + Theme.numberWithCommas(price));
 
 
             $('#package-tabs a').click(function(){
