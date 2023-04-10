@@ -281,6 +281,7 @@
             .acf-field {
                 padding: 0px;
                 border: none;
+                margin: 0 0 25px;
 
                 &::before {
                     display: none;
@@ -290,6 +291,7 @@
                     float: unset;
                     width: 100%;
                     padding: 0;
+                    margin-bottom: 15px;
 
                     label {
                         text-transform: uppercase;
@@ -306,6 +308,25 @@
 
                 .acf-input {
                     padding: 0;
+
+                    .acf-fields {
+                        border: none;
+                    }
+
+                    .acf-range-wrap {
+                        input[type=range] {
+                            max-width: 350px;
+                        }
+
+                        input[type=number] {
+                            width: 100%!important;
+                            max-width: 70px;
+                            border-radius: 10px;
+                            font-weight: 700;
+                            color: @main-color1;
+                            border: 1px solid @main-color1;
+                        }
+                    }
                 }
             }
         }
