@@ -54,6 +54,10 @@ if ( have_posts() ) : ?>
                                 </ul>
                                     <!-- Tabs navs -->
 
+                                <div class="calc-price">
+                                    <div class="calc-price_container">Calculated Price: <span class="price">$99.99</span></div>
+                                </div>
+
                                     <!-- Tabs content -->
                                 <div class="tab-content" id="package-tabs_content">
                                     <?php foreach($packages as $k => $p): ?>
@@ -62,9 +66,6 @@ if ( have_posts() ) : ?>
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
-                            </div>
-                            <div class="calc-price">
-                                <div class="calc-price_container">Calculated Price: <span class="price">$99.99</span></div>
                             </div>
                         </div>
                         <div class="col-md-8">
