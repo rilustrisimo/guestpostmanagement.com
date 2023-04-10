@@ -699,9 +699,17 @@
                 padding: 10px 15px;
                 border-radius: 5px;
 
+                i {
+                    display: none;
+                }
+
                 &.active {
                     background-color: @main-color2;
                     color: #fff;
+
+                    i {
+                        display: inline;
+                    }
                 }
             }
 
@@ -1158,6 +1166,12 @@ div[data-name="package_id"] {
     display: block;
     max-width: 1080px;
     width: 100%;
+}
+
+.page-single__content {
+    .configure {
+
+    }
 }
 
 

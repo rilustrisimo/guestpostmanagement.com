@@ -49,7 +49,7 @@ if ( have_posts() ) : ?>
                                         <?php
                                             $product = wc_get_product($p['package_product_id']->ID);
                                         ?>
-                                        <li><a data-toggle="tab" product-price="<?php echo $product->get_price(); ?>" product-id="<?php echo $p['package_product_id']->ID; ?>" class="<?php echo (!$k)?'active':''; ?>" href="#tab-<?php echo $k; ?>"><?php echo $p['package_title']; ?></a></li>
+                                        <li><a data-toggle="tab" product-price="<?php echo $product->get_price(); ?>" product-id="<?php echo $p['package_product_id']->ID; ?>" class="<?php echo (!$k)?'active':''; ?>" href="#tab-<?php echo $k; ?>"><i class="fa-solid fa-circle-check"></i> <?php echo $p['package_title']; ?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                                     <!-- Tabs navs -->
@@ -63,13 +63,13 @@ if ( have_posts() ) : ?>
                                     <?php endforeach; ?>
                                 </div>
                             </div>
+                            <div class="calc-price">
+                                <div class="calc-price_container">Calculated Price: <span class="price">$99.99</span></div>
+                            </div>
                         </div>
                         <div class="col-md-8">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-12 calc-price">
-                                        <div class="calc-price_container">Calculated Price: <span class="price">$99.99</span></div>
-                                    </div>
                                     <div class="col-md-12 gen-settings">
                                         <?php $theme->createAcfForm(155, 'orderfields', 'Add to Cart', 'configure-order/?success=1'); ?>
                                     </div>
