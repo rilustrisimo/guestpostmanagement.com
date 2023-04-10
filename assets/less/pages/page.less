@@ -279,10 +279,18 @@
             .acf-field {
                 padding: 0px 12px;
 
+                &::before {
+                    display: none;
+                }
+
                 .acf-label {
                     label {
                         text-transform: uppercase;
                         color: @main-color1;
+                        line-height: 19px;
+                        padding: 7px 0 0;
+                        float: unset;
+                        width: 100%;
                     }
 
                     .description {
