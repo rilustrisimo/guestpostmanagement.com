@@ -46,7 +46,7 @@ var Theme = {
                     $('.configure').addClass('config-sticky');
                     $('.configure').css({
                         'top': header + 15 + 'px',
-                        'height': $(window).height() + 'px'
+                        'height': $(window).height() - header + 'px'
                     });
 
                     $('.config-content').addClass('content-sticky');
