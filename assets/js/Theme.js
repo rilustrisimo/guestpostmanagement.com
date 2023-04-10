@@ -37,7 +37,7 @@ var Theme = {
 
         if(op.length > 0) {
             $(window).scroll(function(){
-                var header = $('header.header').offset() + 100;
+                var header = $('header.header').offset().top + 100;
                 var scrtop = $(window).scrollTop();
                 console.log('header',header);
                 console.log('scrtop',scrtop);
