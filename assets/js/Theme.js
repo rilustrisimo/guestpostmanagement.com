@@ -38,7 +38,7 @@ var Theme = {
         if(op.length > 0) {
             $(window).scroll(function(){
                 var header = $('header.header').offset() + 100;
-                var offstop = $(this).offset.top;
+                var offstop = $(this).offset().top;
                 console.log(offstop);
             });
         }
