@@ -16,6 +16,7 @@ var Theme = {
         this.configureScripts($);
         this.miscScripts($);
         this.mobileChecker($);
+        this.configScroll($);
 
         $( '[data-toggle="tooltip"]' ).tooltip();
 
@@ -29,6 +30,15 @@ var Theme = {
         $(window).resize(function(){
             Theme.mobileChecker($);
         });
+    },
+
+    configScroll: function($) {
+        var op = $('.order-packages');
+
+        if(op.length > 0) {
+            var header = $('header.header').Offset();
+            console.log(header);
+        }
     },
 
     mobileChecker: function($) {
