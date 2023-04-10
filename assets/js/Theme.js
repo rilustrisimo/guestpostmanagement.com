@@ -36,8 +36,11 @@ var Theme = {
         var op = $('.order-packages');
 
         if(op.length > 0) {
-            var header = $('header.header').Offset();
-            console.log(header);
+            $(window).scroll(function(){
+                var header = $('header.header').offset() + 100;
+                var offstop = $(this).offset.top;
+                console.log(offstop);
+            });
         }
     },
 
