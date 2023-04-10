@@ -153,7 +153,7 @@ var Theme = {
             words = ' + ' + (rate[nowords] * noa).toFixed(2);
         }
         
-        $('.calc-price_container span').text('$' + (noa * p).toFixed(2) + words);
+        $('.calc-price_container span').text('$' + Theme.numberWithCommas((noa * p).toFixed(2) + words));
     },
 
     fontaweDetails: function($){
