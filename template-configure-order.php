@@ -68,7 +68,7 @@ if ( have_posts() ) : ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 config-content">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12 gen-settings">

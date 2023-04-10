@@ -37,15 +37,27 @@ var Theme = {
 
         if(op.length > 0) {
             $(window).scroll(function(){
-                var header = $('header.header').height() + 32;
+                var header = $('header.header').height() + $('#wpadminbar').height();
                 var scrtop = $(window).scrollTop();
                 console.log('header',header);
                 console.log('scrtop',scrtop);
                 
                 if(scrtop > header){
                     $('.configure').addClass('config-sticky');
+                    $('.configure').css({
+                        'top': header + 15 + 'px',
+                        'height': $(window).height() + 'px'
+                    });
+
+                    $('.config-content').addClass('content-sticky');
                 }else{
                     $('.configure').removeClass('config-sticky');
+                    $('.configure').css({
+                        'top': 'unset',
+                        'height': 'auto'
+                    });
+
+                    $('.config-content').removeClass('content-sticky');
                 }
             });
         }
