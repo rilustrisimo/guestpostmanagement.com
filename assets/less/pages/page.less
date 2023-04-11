@@ -297,6 +297,11 @@
                 border: none;
                 margin: 0 0 25px;
 
+                textarea {
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                }
+
                 &::before {
                     display: none;
                 }
@@ -317,6 +322,15 @@
                     .description {
                         font-size: 13px;
                         line-height: 17px;
+                    }
+                }
+
+                .acf-switch {
+                    span {
+                        font-family: @open-sans;
+                        color: @main-color1;
+                        font-size: 13px;
+                        font-weight: 400;
                     }
                 }
 
@@ -368,6 +382,12 @@
     .select2-search__field {
         margin: 5px auto 0;
         max-width: 100%;
+    }
+}
+
+.select2-container.-acf {
+    .select2-selection {
+        border-color: @main-color1;
     }
 }
 
@@ -1527,6 +1547,18 @@ div[data-name="package_id"] {
 
     #place_order {
         margin-top: 15px;
+    }
+
+    .acf-field {
+        p {
+            text-align: left;
+        }
+    }
+
+    .order-packages {
+        p {
+            text-align: left;
+        }
     }
 }
 
