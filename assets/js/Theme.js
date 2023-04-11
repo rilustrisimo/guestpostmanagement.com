@@ -35,7 +35,7 @@ var Theme = {
     configScroll: function($) {
         var op = $('.order-packages');
 
-        if(op.length > 0) {
+        if(op.length > 0 && !Theme.isMobile()) {
             $(window).scroll(function(){
                 var header = $('header.header').height() + $('#wpadminbar').height();
                 var scrtop = $(window).scrollTop();
