@@ -297,6 +297,11 @@
                 border: none;
                 margin: 0 0 25px;
 
+                input[type=text] {
+                    border: 1px solid @main-color1;
+                    border-radius: 5px;
+                }
+
                 textarea {
                     border: 1px solid #000;
                     border-radius: 5px;
@@ -331,6 +336,10 @@
                         color: @main-color1;
                         font-size: 13px;
                         font-weight: 400;
+
+                        &.acf-switch-on {
+                            color: #fff;
+                        }
                     }
                 }
 
@@ -1556,7 +1565,8 @@ div[data-name="package_id"] {
     }
 
     .order-packages {
-        p {
+        p,
+        ul li {
             text-align: left;
         }
     }
