@@ -45,7 +45,7 @@ var Theme = {
                 if(scrtop > header){
                     $('.configure').addClass('config-sticky');
                     $('.configure').css({
-                        'top': header + 15 + 'px',
+                        'top': (header + scrtop) + 15 + 'px',
                         'height': $(window).height() - header + 'px'
                     });
 
