@@ -45,7 +45,7 @@ var Theme = {
                 if(scrtop > header){
                     var lim = $('.gen-settings').offset().top + $('.gen-settings').height();
 
-                    if(lim < scrtop){
+                    if(lim >= scrtop){
                         $('.configure').css({
                             'top': (header + scrtop) + 15 + 'px',
                             'height': $(window).height() - header + 'px'
