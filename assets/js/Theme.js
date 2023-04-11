@@ -43,7 +43,7 @@ var Theme = {
                 console.log('scrtop',scrtop);
                 
                 if(scrtop > header){
-                    var lim = $('.gen-settings').offset().top + $('.gen-settings').height();
+                    var lim = $('.gen-settings').offset().top + $('.gen-settings').height() - $('.config-sticky').height();
 
                     if(lim >= scrtop){
                         $('.configure').css({
