@@ -43,12 +43,16 @@ var Theme = {
                 console.log('scrtop',scrtop);
                 
                 if(scrtop > header){
-                    $('.configure').addClass('config-sticky');
-                    $('.configure').css({
-                        'top': (header + scrtop) + 15 + 'px',
-                        'height': $(window).height() - header + 'px'
-                    });
+                    var lim = $('.gen-settings').offset().top + $('.gen-settings').height();
 
+                    if(lim < scrtop){
+                        $('.configure').css({
+                            'top': (header + scrtop) + 15 + 'px',
+                            'height': $(window).height() - header + 'px'
+                        });
+                    }
+
+                    $('.configure').addClass('config-sticky');
                     $('.config-content').addClass('content-sticky');
                 }else{
                     $('.configure').removeClass('config-sticky');
