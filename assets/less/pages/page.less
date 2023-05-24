@@ -1628,6 +1628,7 @@ body.woocommerce-checkout {
 
         .form-row {
             position: relative;
+            margin-bottom: 20px;
 
             label {
                 background-color: @main-color2;
@@ -1638,6 +1639,7 @@ body.woocommerce-checkout {
                 border-radius: 9px;
                 position: absolute;
                 top: -10px;
+                z-index: 9;
             }
 
             input {
@@ -1645,8 +1647,17 @@ body.woocommerce-checkout {
                 width: 100%;
                 max-width: unset;
                 border: 1px solid @main-color1;
-                height: 40px;
-                line-height: 40px;
+                height: 42px;
+                line-height: 42px;
+            }
+
+            .select2-container {
+                max-width: unset;
+
+                .select2-selection {
+                    border: 1px solid @main-color1;
+                    border-radius: 10px;
+                }
             }
 
         }
