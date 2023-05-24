@@ -846,6 +846,7 @@
         ul {
             max-width: unset;
             margin-left: 0px;
+            margin-top: 15px;
         }
 
         p {
@@ -1611,5 +1612,43 @@ div[data-name="package_id"] {
 .woocommerce-EditAccountForm {
     & > .woocommerce-form-row:nth-child(6) {
         display: none;
+    }
+}
+
+body.woocommerce-checkout {
+    .woocommerce-billing-fields {
+        h3 {
+            background-color: @main-color2;
+            color: #fff;
+            font-size: 18px;
+            padding: 0 15px;
+            border-radius: 10px;
+            margin: 0 0 15px;
+        }
+
+        .form-row {
+            position: relative;
+
+            label {
+                background-color: @main-color2;
+                color: #fff;
+                padding: 0 10px;
+                line-height: 20px;
+                font-size: 13px;
+                border-radius: 9px;
+                position: absolute;
+                top: -10px;
+            }
+
+            input {
+                border-radius: 10px;
+                width: 100%;
+                max-width: unset;
+                border: 1px solid @main-color1;
+                height: 40px;
+                line-height: 40px;
+            }
+
+        }
     }
 }
